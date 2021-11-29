@@ -15,9 +15,11 @@ sys.path.append("../")
 from net import net_pb2, net_pb2_grpc
 
 _ONE_DAY_IN_SECONDS = 60 * 60 * 24
-_IP = "10.46.234.251"
 _HOST = "localhost"
+_IP = "10.46.234.251"
 _PORT = "8883"
+_MYSQL_USER = "root"
+_MYSQL_PASSWORD = "Ddb123$%^"
 
 
 class servicer(net_pb2_grpc.NetServiceServicer):
@@ -25,7 +27,9 @@ class servicer(net_pb2_grpc.NetServiceServicer):
         self.client = {}
         for site in sites:
             if _IP == site["IP"] and _PORT == site["PORT"]:
-                self.conndb = Conndb(database=site["DB"])
+                self.conndb = Conndb(
+                    user=_MYSQL_USER, password=_MYSQL_PASSWORD, database=site["DB"]
+                )
             else:
                 if site["IP"] == _IP:
                     ip = _HOST
