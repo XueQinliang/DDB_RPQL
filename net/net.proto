@@ -1,0 +1,24 @@
+syntax = "proto3";
+package net;
+service NetService {
+  //test method
+  rpc SimpleFun(RequestData) returns (ResponseData){}
+  rpc Excute(SQLTree) returns (TableData) {}
+}
+
+message RequestData {
+  string text = 1;
+}
+
+message ResponseData {
+  string text = 1;
+}
+
+message SQLTree {
+  string sql = 1;
+  string sites = 2;
+}
+
+message TableData {
+  string table = 1;
+}
