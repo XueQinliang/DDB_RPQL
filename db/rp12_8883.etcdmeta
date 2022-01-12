@@ -1,0 +1,32 @@
+/attrinfo/Customer.id
+{'attr': 'Customer.id', 'type': 'U', 'numbers': ['300001', '315000', '15000']}
+/attrinfo/Customer.rank
+{'attr': 'Customer.rank', 'type': 'P', 'numbers': ['1', '0.4', '2', '0.3', '3', '0.3']}
+/site/china/fragment/Customer
+{'columns': ['id', 'name'], 'conditions': '', 'sitename': 'china', 'site': '10.77.70.61:8883:rp12_8883', 'size': 0}
+/site/japan/fragment/Customer
+{'columns': ['id', 'rank'], 'conditions': '', 'sitename': 'japan', 'site': '10.77.70.61:8885:rp12_8885', 'size': 0}
+/table
+['Customer']
+/table/Customer/columns
+[['id', 'int', 'key'], ['name', 'char(25)'], ['rank', 'int']]
+/table/Customer/columnsize/id
+4
+/table/Customer/columnsize/name
+9.0168
+/table/Customer/columnsize/rank
+4
+/table/Customer/fragment/china
+{'columns': ['id', 'name'], 'conditions': '', 'sitename': 'china', 'site': '10.77.70.61:8883:rp12_8883', 'size': 0}
+/table/Customer/fragment/japan
+{'columns': ['id', 'rank'], 'conditions': '', 'sitename': 'japan', 'site': '10.77.70.61:8885:rp12_8885', 'size': 0}
+/table/Customer/lenfragment/china
+15000
+/table/Customer/lenfragment/japan
+15000
+DB
+['rp6', 'rp7', 'rp8', 'rp10', 'rp11', 'rp12', 'rp13']
+SITES
+['10.77.70.61:8883:rp12_8883', '10.77.70.61:8885:rp12_8885', '10.77.70.62:8883:rp12_8883', '10.77.70.63:8883:rp12_8883']
+sitenames
+{'china': '10.77.70.61:8883:rp12_8883', 'japan': '10.77.70.61:8885:rp12_8885', 'england': '10.77.70.62:8883:rp12_8883', 'usa': '10.77.70.63:8883:rp12_8883'}

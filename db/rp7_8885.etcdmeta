@@ -1,0 +1,23 @@
+/site/china/fragment/Customer
+{'columns': ['id', 'name'], 'conditions': '', 'sitename': 'china', 'site': '10.77.70.61:8883:rp4_8883', 'size': 0}
+/site/japan/fragment/Customer
+{'columns': ['id', 'rank'], 'conditions': '', 'sitename': 'japan', 'site': '10.77.70.61:8885:rp4_8885', 'size': 0}
+/table
+['Customer']
+/table/Customer/columns
+[['id', 'int', 'key'], ['name', 'char(25)'], ['rank', 'int']]
+/table/Customer/columnsize/id
+4
+/table/Customer/columnsize/name
+9.0168
+/table/Customer/columnsize/rank
+4
+/table/Customer/fragment/china
+{'columns': ['id', 'name'], 'conditions': '', 'sitename': 'china', 'site': '10.77.70.61:8883:rp4_8883', 'size': 0}
+/table/Customer/fragment/japan
+{'columns': ['id', 'rank'], 'conditions': '', 'sitename': 'japan', 'site': '10.77.70.61:8885:rp4_8885', 'size': 0}
+/table/Customer/lenfragment/china
+15000
+/table/Customer/lenfragment/japan
+15000
+/tree

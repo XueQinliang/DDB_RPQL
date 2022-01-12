@@ -1,0 +1,136 @@
+/attrinfo/Book.copies
+{'attr': 'Book.copies', 'type': 'U', 'numbers': ['0', '10000', '50000']}
+/attrinfo/Book.id
+{'attr': 'Book.id', 'type': 'U', 'numbers': ['200001', '250000', '50000']}
+/attrinfo/Customer.id
+{'attr': 'Customer.id', 'type': 'U', 'numbers': ['300001', '315000', '15000']}
+/attrinfo/Customer.rank
+{'attr': 'Customer.rank', 'type': 'P', 'numbers': ['1', '0.4', '2', '0.3', '3', '0.3']}
+/attrinfo/Orders.quantity
+{'attr': 'Orders.quantity', 'type': 'N', 'numbers': ['3', '2', '1', '12']}
+/attrinfo/Publisher.id
+{'attr': 'Publisher.id', 'type': 'U', 'numbers': ['100001', '105000', '5000']}
+/attrinfo/Publisher.nation
+{'attr': 'Publisher.nation', 'type': 'P', 'numbers': ["'USA'", '0.5', "'PRC'", '0.5']}
+/site/britain/fragment/Book
+{'columns': ['id', 'title', 'authors', 'publisher_id', 'copies'], 'conditions': 'id >= 210000', 'sitename': 'britain', 'site': '10.77.70.62:8883:rpql1_8883', 'size': 0}
+/site/britain/fragment/Orders
+{'columns': ['customer_id', 'book_id', 'quantity'], 'conditions': 'customer_id >= 307000 and book_id < 215000', 'sitename': 'britain', 'site': '10.77.70.62:8883:rpql1_8883', 'size': 0}
+/site/britain/fragment/Publisher
+{'columns': ['id', 'name', 'nation'], 'conditions': "id >= 104000 and nation='PRC'", 'sitename': 'britain', 'site': '10.77.70.62:8883:rpql1_8883', 'size': 0}
+/site/china/fragment/Book
+{'columns': ['id', 'title', 'authors', 'publisher_id', 'copies'], 'conditions': 'id < 205000', 'sitename': 'china', 'site': '10.77.70.61:8883:rpql1_8883', 'size': 0}
+/site/china/fragment/Customer
+{'columns': ['id', 'name'], 'conditions': '', 'sitename': 'china', 'site': '10.77.70.61:8883:rpql1_8883', 'size': 0}
+/site/china/fragment/Orders
+{'columns': ['customer_id', 'book_id', 'quantity'], 'conditions': 'customer_id < 307000 and book_id < 215000', 'sitename': 'china', 'site': '10.77.70.61:8883:rpql1_8883', 'size': 0}
+/site/china/fragment/Publisher
+{'columns': ['id', 'name', 'nation'], 'conditions': "id < 104000 and nation='PRC'", 'sitename': 'china', 'site': '10.77.70.61:8883:rpql1_8883', 'size': 0}
+/site/japan/fragment/Book
+{'columns': ['id', 'title', 'authors', 'publisher_id', 'copies'], 'conditions': 'id >= 205000 and id < 210000', 'sitename': 'japan', 'site': '10.77.70.61:8885:rpql1_8885', 'size': 0}
+/site/japan/fragment/Customer
+{'columns': ['id', 'rank'], 'conditions': '', 'sitename': 'japan', 'site': '10.77.70.61:8885:rpql1_8885', 'size': 0}
+/site/japan/fragment/Orders
+{'columns': ['customer_id', 'book_id', 'quantity'], 'conditions': 'customer_id < 307000 and book_id >= 215000', 'sitename': 'japan', 'site': '10.77.70.61:8885:rpql1_8885', 'size': 0}
+/site/japan/fragment/Publisher
+{'columns': ['id', 'name', 'nation'], 'conditions': "id < 104000 and nation='USA'", 'sitename': 'japan', 'site': '10.77.70.61:8885:rpql1_8885', 'size': 0}
+/site/usa/fragment/Orders
+{'columns': ['customer_id', 'book_id', 'quantity'], 'conditions': 'customer_id >= 307000 and book_id >= 215000', 'sitename': 'usa', 'site': '10.77.70.63:8883:rpql1_8883', 'size': 0}
+/site/usa/fragment/Publisher
+{'columns': ['id', 'name', 'nation'], 'conditions': "id >= 104000 and nation='USA'", 'sitename': 'usa', 'site': '10.77.70.63:8883:rpql1_8883', 'size': 0}
+/table
+['Publisher', 'Book', 'Customer', 'Orders']
+/table/Book/columns
+[['id', 'int', 'key'], ['title', 'char(100)'], ['authors', 'char(200)'], ['publisher_id', 'int'], ['copies', 'int']]
+/table/Book/columnsize/authors
+9.01262468438289
+/table/Book/columnsize/copies
+4
+/table/Book/columnsize/id
+4
+/table/Book/columnsize/publisher_id
+4
+/table/Book/columnsize/title
+12.0
+/table/Book/fragment/britain
+{'columns': ['id', 'title', 'authors', 'publisher_id', 'copies'], 'conditions': 'id >= 210000', 'sitename': 'britain', 'site': '10.77.70.62:8883:rpql1_8883', 'size': 0}
+/table/Book/fragment/china
+{'columns': ['id', 'title', 'authors', 'publisher_id', 'copies'], 'conditions': 'id < 205000', 'sitename': 'china', 'site': '10.77.70.61:8883:rpql1_8883', 'size': 0}
+/table/Book/fragment/japan
+{'columns': ['id', 'title', 'authors', 'publisher_id', 'copies'], 'conditions': 'id >= 205000 and id < 210000', 'sitename': 'japan', 'site': '10.77.70.61:8885:rpql1_8885', 'size': 0}
+/table/Book/lenfragment/britain
+40001
+/table/Book/lenfragment/china
+4999
+/table/Book/lenfragment/japan
+5000
+/table/Customer/columns
+[['id', 'int', 'key'], ['name', 'char(25)'], ['rank', 'int']]
+/table/Customer/columnsize/id
+4
+/table/Customer/columnsize/name
+9.0168
+/table/Customer/columnsize/rank
+4
+/table/Customer/fragment/china
+{'columns': ['id', 'name'], 'conditions': '', 'sitename': 'china', 'site': '10.77.70.61:8883:rpql1_8883', 'size': 0}
+/table/Customer/fragment/japan
+{'columns': ['id', 'rank'], 'conditions': '', 'sitename': 'japan', 'site': '10.77.70.61:8885:rpql1_8885', 'size': 0}
+/table/Customer/lenfragment/china
+15000
+/table/Customer/lenfragment/japan
+15000
+/table/Orders/columns
+[['customer_id', 'int'], ['book_id', 'int'], ['quantity', 'int']]
+/table/Orders/columnsize/book_id
+4
+/table/Orders/columnsize/customer_id
+4
+/table/Orders/columnsize/quantity
+4
+/table/Orders/fragment/britain
+{'columns': ['customer_id', 'book_id', 'quantity'], 'conditions': 'customer_id >= 307000 and book_id < 215000', 'sitename': 'britain', 'site': '10.77.70.62:8883:rpql1_8883', 'size': 0}
+/table/Orders/fragment/china
+{'columns': ['customer_id', 'book_id', 'quantity'], 'conditions': 'customer_id < 307000 and book_id < 215000', 'sitename': 'china', 'site': '10.77.70.61:8883:rpql1_8883', 'size': 0}
+/table/Orders/fragment/japan
+{'columns': ['customer_id', 'book_id', 'quantity'], 'conditions': 'customer_id < 307000 and book_id >= 215000', 'sitename': 'japan', 'site': '10.77.70.61:8885:rpql1_8885', 'size': 0}
+/table/Orders/fragment/usa
+{'columns': ['customer_id', 'book_id', 'quantity'], 'conditions': 'customer_id >= 307000 and book_id >= 215000', 'sitename': 'usa', 'site': '10.77.70.63:8883:rpql1_8883', 'size': 0}
+/table/Orders/lenfragment/britain
+15929
+/table/Orders/lenfragment/china
+13896
+/table/Orders/lenfragment/japan
+32606
+/table/Orders/lenfragment/usa
+37569
+/table/Publisher/columns
+[['id', 'int', 'key'], ['name', 'char(100)'], ['nation', 'char(3)']]
+/table/Publisher/columnsize/id
+4
+/table/Publisher/columnsize/name
+17.0
+/table/Publisher/columnsize/nation
+3.0
+/table/Publisher/fragment/britain
+{'columns': ['id', 'name', 'nation'], 'conditions': "id >= 104000 and nation='PRC'", 'sitename': 'britain', 'site': '10.77.70.62:8883:rpql1_8883', 'size': 0}
+/table/Publisher/fragment/china
+{'columns': ['id', 'name', 'nation'], 'conditions': "id < 104000 and nation='PRC'", 'sitename': 'china', 'site': '10.77.70.61:8883:rpql1_8883', 'size': 0}
+/table/Publisher/fragment/japan
+{'columns': ['id', 'name', 'nation'], 'conditions': "id < 104000 and nation='USA'", 'sitename': 'japan', 'site': '10.77.70.61:8885:rpql1_8885', 'size': 0}
+/table/Publisher/fragment/usa
+{'columns': ['id', 'name', 'nation'], 'conditions': "id >= 104000 and nation='USA'", 'sitename': 'usa', 'site': '10.77.70.63:8883:rpql1_8883', 'size': 0}
+/table/Publisher/lenfragment/britain
+530
+/table/Publisher/lenfragment/china
+2027
+/table/Publisher/lenfragment/japan
+1972
+/table/Publisher/lenfragment/usa
+471
+DB
+['rpql1', 'rpql2']
+SITES
+['10.77.70.61:8883:rpql1_8883', '10.77.70.61:8885:rpql1_8885', '10.77.70.63:8883:rpql1_8883', '10.77.70.62:8883:rpql1_8883']
+sitenames
+{'china': '10.77.70.61:8883:rpql1_8883', 'japan': '10.77.70.61:8885:rpql1_8885', 'britain': '10.77.70.62:8883:rpql1_8883', 'usa': '10.77.70.63:8883:rpql1_8883'}
