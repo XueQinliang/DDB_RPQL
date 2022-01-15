@@ -75,3 +75,9 @@ request and response format are defined in net.proto
 - etcd use Etcd_S, means safe etcd that with try except.
 - db use Conndb, a good class for mysql.
 
+The following people contributed to `RPQL`.
+
+- Qinliang Xue([@XueQinliang](https://github.com/XueQinliang))
+- Peng Wang([@LisaWang0306](https://github.com/LisaWang0306))
+- Jiawei Liu([@rucjrliu](https://github.com/rucjrliu))
+
