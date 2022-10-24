@@ -28,7 +28,8 @@ class Conndb:
     def write(self, sql):
         self.cursor.execute(sql)
         self.db.commit()
-        print("write complete")
+        return 200
+        # print("write complete")
 
     def __del__(self):
         # 关闭数据库连接
