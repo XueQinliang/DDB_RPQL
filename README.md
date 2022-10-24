@@ -5,7 +5,8 @@ This is the distributed database course project by the group **Qinliang Xue, Jia
 If you just want to start from this homework to submit for DDB course, please change another program language.
 
 ## Github URL
-welcome to star for this program if you like it :-) !!!
+welcome to star for this program if you like it 😄 !!!
+
 [https://github.com/XueQinliang/DDB_RPQL](https://github.com/XueQinliang/DDB_RPQL)
 
 ## Document
