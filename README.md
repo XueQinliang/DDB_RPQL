@@ -2,7 +2,10 @@
 
 This is the distributed database course project by the group **Qinliang Xue, Jiawei Liu, Peng Wang**, welcome to join this program, add new features and repair bugs. The name from our three' name: $R_{JR Liu}P_{Peng Wang}QL_{qinliang Xue}$.
 
-If you just want to start from this homework to submit for DDB course, please use another program language.
+If you just want to start from this homework to submit for DDB course, please change another program language.
+
+## Github URL
+[https://github.com/XueQinliang/DDB_RPQL](https://github.com/XueQinliang/DDB_RPQL)
 
 ## Document
 
