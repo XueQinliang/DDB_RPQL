@@ -1,6 +1,16 @@
-# DDB_RPQL
+# RPQL: a Robust Performant SQL
 
-This is the distributed database course project by the group **Qinliang Xue, Jiawei Liu, Peng Wang**, welcome to join this program, add new features and repair bugs. If you just want to start from this homework to submit for DDB course, please use another program language.
+This is the distributed database course project by the group **Qinliang Xue, Jiawei Liu, Peng Wang**, welcome to join this program, add new features and repair bugs. The name from our three' name: $R_{JR Liu}P_{Peng Wang}QL_{qinliang Xue}$.
+
+If you just want to start from this homework to submit for DDB course, please use another program language.
+
+## Document
+
+Document is available at:
+
+[Midterm Report](./RPQL_midreport.pdf)
+
+[Final Report](./RPQL_finalreport.pdf)
 
 ## Framework
 
@@ -70,15 +80,15 @@ pip install --no-index --find-links=./your_whl_dir -r requirements.txt
 
   ![query tree](./querytree.PNG)
 
-# Detailed examples to run the code
+## Detailed examples to run the code
 
-## trans server code to other sites
+### trans server code to other sites
 
 1. cd /home/centos
 2. scp -r DDB_RPQL ddb2:~/
 3. scp -r DDB_RPQL ddb3:~/
 
-## detail steps to start four servers
+### detail steps to start four servers
 
 1. log on ddb1(10.77.70.61)
 2. split two windows, one to start site1, you should `cd DDB_RPQL/server` and run `python servermaster.py 8883 db1`,
@@ -89,7 +99,7 @@ pip install --no-index --find-links=./your_whl_dir -r requirements.txt
 6. start site4, you should `cd DDB_RPQL/server` and run `python servermaster.py 8883 db1`.
 7. start client, you should log on ddb1, and `cd DDB_RPQL/client` and run `python clientmaster.py`.
 
-# Instruction of Development
+## Instruction of Development
 
 ### Add method on service
 
@@ -134,7 +144,7 @@ request and response format are defined in net.proto
 - etcd use Etcd_S, means safe etcd that with try except.
 - db use Conndb, a good class for mysql.
 
-# Contributors
+## Contributors
 
 The following people contributed to `RPQL`.
 
